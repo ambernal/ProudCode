@@ -17,9 +17,6 @@ public class AnswersHandlingServiceImpl implements AnswersHandlingService {
 		LOGGER.debug("chooseActions->");
 		final ActionsType actionsType = ActionsType.builder().build();
 
-		actionsType.setCloseSession(false);
-		actionsType.setFinalYes(false);
-		actionsType.setPartialYes(false);
 
 		LOGGER.debug("Search options to combination");
 		InputVarsEnum enumVar = InputVarsEnum.asForCombinationVars(answerBean.isExternalPersistent(),
